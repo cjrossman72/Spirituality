@@ -1,0 +1,15 @@
+[
+	{
+		"name": "Explorer",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 10,
+		"cost": 45,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit", "Can transform to [Scout]"],
+		"replaces": "Trirene",
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
+	}
+]
