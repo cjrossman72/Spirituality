@@ -1,0 +1,163 @@
+[
+  {
+    "columnNumber": 1,
+    "era": "Ancient era",
+    "techCost": 35,
+    "buildingCost": 60,
+    "wonderCost": 185,
+    "techs": [
+      {
+        "name": "Worship",
+        "row": 3,
+        "prerequisites": [
+          "Agriculture"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ],
+        "quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
+      }
+    ]
+  },
+  {
+    "columnNumber": 2,
+    "era": "Ancient era",
+    "techCost": 55,
+    "buildingCost": 75,
+    "wonderCost": 185,
+    "techs": [
+      {
+        "name": "Calendar",
+        "row": 2,
+        "prerequisites": [
+          "Pottery"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ],
+        "quote": "'So teach us to number our days, so that we may apply our hearts unto wisdom.' - Bible Psalms 90:12"
+      },
+      {
+        "name": "Writing",
+        "row": 3,
+        "prerequisites": [
+          "Worship"
+        ],
+        "uniques": [
+          "Enables establishment of embassies <Civilopedia link [Tutorials/Embassies]>"
+        ],
+        "quote": "'He who destroys a good book kills reason itself.' - John Milton"
+      }
+    ]
+  },
+  {
+    "columnNumber": 3,
+    "era": "Classical era",
+    "techCost": 105,
+    "buildingCost": 100,
+    "wonderCost": 250,
+    "techs": [
+      {
+        "name": "Holy Texts",
+        "cost": 85,
+        "row": 3,
+        "prerequisites": [
+          "Calendar",
+          "Writing"
+        ],
+        "quote": "We are not human beings having a spiritual experience. We are spiritual beings having a human experience.\n- Pierre Teilhard de Chardin"
+      },
+      {
+        "name": "Religious Objects",
+        "row": 10,
+        "prerequisites": [
+          "Bronze Working"
+        ],
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ],
+        "quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
+      }
+    ]
+  },
+  {
+    "columnNumber": 4,
+    "era": "Classical era",
+    "techCost": 175,
+    "buildingCost": 100,
+    "wonderCost": 250,
+    "techs": [
+      {
+        "name": "Philosophy",
+        "row": 2,
+        "prerequisites": [
+          "Calendar",
+          "Holy Texts"
+        ],
+        "quote": "'There is only one good, knowledge, and one evil, ignorance.' - Socrates"
+      },
+      {
+        "name": "Drama and Poetry",
+        "row": 3,
+        "prerequisites": [
+          "Holy Texts"
+        ],
+        "quote": "'What is drama but life with the dull bits cut out.' - Alfred Hitchcock"
+      },
+      {
+        "name": "Sacred Architecture",
+        "row": 9,
+        "prerequisites": [
+          "Construction",
+          "Religious Objects"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ],
+        "quote": "'Instrumental or mechanical science is the noblest and, above all others, the most useful.' - Leonardo da Vinci"
+      },
+      {
+        "name": "Iron Working",
+        "row": 10,
+        "prerequisites": [
+          "Religious Objects"
+        ],
+        "uniques": [
+          "[-50]% weight to this choice for AI decisions"
+        ],
+        "quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
+      }
+    ]
+  },
+  {
+    "columnNumber": 5,
+    "era": "Medieval era",
+    "techCost": 275,
+    "buildingCost": 120,
+    "wonderCost": 300,
+    "techs": [
+      {
+        "name": "Evangelism",
+        "row": 1,
+        "prerequisites": [
+          "Optics",
+          "Philosophy"
+        ],
+        "quote": "'Three things are necessary for the salvation of man: to know what he ought to believe; to know what he ought to desire; and to know what he ought to do' - St. Thomas Aquinas"
+      },
+      {
+        "name": "Metal Casting",
+        "row": 9,
+        "prerequisites": [
+          "Engineering",
+          "Sacred Architecture",
+          "Iron Working"
+        ],
+        "uniques": [
+          "[+100]% weight to this choice for AI decisions"
+        ],
+        "quote": "'When pieces of bronze or gold or iron break, the metal-smith welds them together again in the fire, and the bond is established.' - Sri Guru Granth Sahib"
+      }
+    ]
+  }
+]

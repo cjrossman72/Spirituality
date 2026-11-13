@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Shrine",
+    "techRequired": "Sacred Architecture",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "uniques": [
+      "Gain [50] [Faith]",
+      "Can only be built to improve a resource <hidden from users>",
+      "Can be built outside your borders",
+      "Only available <for [Abbot] units>",
+      "Remove [Sacred Site] resources from this tile <hidden from users>",
+      "Remove [Shrine] improvements from this tile <hidden from users> <upon turn end>"
+    ]
+  },
+  {
+    "name": "Altar",
+    "techRequired": "Worship",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "faith": 1,
+    "uniques": [
+      "Can only be built to improve a resource <hidden from users>",
+      "Only available <for [Cleric] units>",
+      "[+1 Food] from [Wheat] tiles",
+      "[+1 Food] from [Rice] tiles",
+      "[+1 Happiness] from [Sheep] tiles",
+      "[+1 Happiness] from [Goat] tiles",
+      "[+1 Culture] from [Wine] tiles",
+      "[+1 Culture] from [Incense] tiles"
+    ],
+    "civilopediaText": [
+      {
+        "text": "[Altar]s can be built by [Cleric]s on certain resources to provide stats different from the resource they would normally provide."
+      },
+      {
+        "text": "[Altar]s built on [Wine] and [Incense] are in celebration to the gods and increase [Culture]."
+      },
+      {
+        "text": "[Altar]s built on [Wheat] and [Rice] are offerings of thanksgiving for a bountiful harvest and increase [Food]."
+      },
+      {
+        "text": "[Altar]s built on [Goat]s and [Sheep] are atonement for sins and increase [Happiness]."
+      },
+      {
+        "separator": true
+      },
+      {
+        "text": "Cleric",
+        "link": "Unit/Cleric"
+      }
+    ]
+  }
+]
