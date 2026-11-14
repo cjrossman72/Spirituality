@@ -145,7 +145,7 @@
     ]
   },
   {
-    "name": "Sacred Site",
+    "name": "Holy Ground",
     "resourceType": "Bonus",
     "revealedBy": "Sacred Architecture",
     "terrainsCanBeFoundOn": [

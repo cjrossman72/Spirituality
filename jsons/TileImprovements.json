@@ -1,6 +1,6 @@
 [
   {
-    "name": "Shrine",
+    "name": "Chapel",
     "techRequired": "Sacred Architecture",
     "terrainsCanBeBuiltOn": [
       "Land"
@@ -10,8 +10,8 @@
       "Can only be built to improve a resource <hidden from users>",
       "Can be built outside your borders",
       "Only available <for [Abbot] units>",
-      "Remove [Sacred Site] resources from this tile <hidden from users>",
-      "Remove [Shrine] improvements from this tile <hidden from users> <upon turn end>"
+      "Remove [Holy Ground] resources from this tile <hidden from users>",
+      "Remove [Chapel] improvements from this tile <hidden from users> <upon turn end>"
     ]
   },
   {
@@ -51,6 +51,20 @@
         "text": "Cleric",
         "link": "Unit/Cleric"
       }
+    ]
+  },
+  {
+    "name": "Abbey",
+    "terrainsCanBeBuiltOn": [
+      "Land"
+    ],
+    "faith": 6,
+    "uniques": [
+      "Great Improvement",
+      "Removes removable features when built",
+      "Will not be replaced by automated units",
+      "Free [Abbot] appears",
+      "Pillaging this improvement yields approximately [+20 Gold]"
     ]
   }
 ]
