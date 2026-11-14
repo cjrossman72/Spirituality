@@ -3,16 +3,16 @@
   {
     "name": "Burial Grounds",
     "faith": 1,
+    "culture": 1,
     "cost": 40,
     "maintenance": 1,
     "requiredTech": "Mining",
     "uniques": [
       "Only available <when religion is enabled>"
-    ],
-    "culture": 1
+    ]
   },
   {
-    "name": "House of Worship",
+    "name": "Worship Stone",
     "requiredTech": "Worship",
     "faith": 1,
     "cost": 50,
@@ -32,68 +32,104 @@
       "Destroyed when the city is captured"
     ]
   },
-  {
-    "name": "Synagogue",
-    "requiredTech": "Writing",
-    "faith": 1,
-    "science": 1,
-    "cost": 50,
-    "hurryCostModifier": 25,
-    "uniques": [
-      "Destroyed when the city is captured",
-      "[+1 Production] from [Timber] tiles [in this city] <after discovering [Mathmatics]>",
-      "Instantly gain [1] [Wood] <for every [Timber]> <in this city>"
-    ]
-  },
   // Classical Era
   {
-    "name": "Abbey",
+    "name": "Yeshiva",
     "requiredTech": "Holy Texts",
     "faith": 1,
-    "culture": 1,
-    "cost": 175,
+    "happiness": 1,
     "hurryCostModifier": 25,
     "uniques": [
       "Destroyed when the city is captured",
-      "[15]% Great Person generation [in this city]",
-      "Free [Abbot] appears"
+      "[+2 Science] <in this city>",
+      "[+1 Science] <upon discovering [Philosophy] technology>"
+    ],
+    "maintenance": 1,
+    "civilopediaText": [
+      {
+        "text": "An educational institution and study hall dedicated to the intensive study of traditional religious texts, particularly the Talmud and Torah."
+      }
     ]
   },
   {
-    "name": "Convent",
-    "requiredTech": "Holy Texts",
+    "name": "Cathedral",
+    "requiredTech": "Sacred Architecture",
     "faith": 1,
-    "happiness": 2,
-    "cost": 75,
+    "culture": 1,
     "hurryCostModifier": 25,
     "uniques": [
       "Destroyed when the city is captured",
-      "[+2 Happiness] <in cities following our religion> <in this city>"
-    ],
-    "civilopediaText": [
-      {
-        "text": "Built around 607 AD, it is widely recognized as one of the oldest surviving wooden-constructed buildings in the world, utilizing ancient Japanese cypress."
-      }
+      "[+2 Happiness] <in this city>"
+    ]
+  },
+  {
+    "name": "Mosque",
+    "requiredTech": "Sacred Architecture",
+    "faith": 1,
+    "culture": 1,
+    "hurryCostModifier": 25,
+    "uniques": [
+      "Destroyed when the city is captured",
+      "[+2 Culture] <in cities following our religion> <in this city>"
     ]
   },
   // Medieval Era
   {
     "name": "Seminary",
-    "requiredBuilding": "Abbey",
+    "requiredBuilding": "Cathedral",
     "requiredTech": "Theology",
-    "uniques": [
-      "[+20]% Faith cost of generating Great Prophet equivalents",
-      "Only available <when religion is enabled>"
-    ],
     "faith": 2,
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "Free [Missionary] appears"
+    ],
     "hurryCostModifier": 50,
     "maintenance": 1
   },
-  // New Wonders
+  // New National Wonders
+  {
+    "name": "National Basilica",
+    "requiredTech": "Sacred Art",
+    "isNationalWonder": true,
+    "faith": 2,
+    "culture": 2,
+    "greatPersonPoints": {
+      "Great Prophet": 1
+    },
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "[15]% Faith cost of generating Great Prophet equivalents",
+      "Only available <if [Cathedral] is constructed in all [non-[Puppeted]] cities>",
+      "Only available <in cities following our religion>",
+      "Only available <in cities with a [Christianity] religion>",
+      "Only available <in cities with a [Catholicism] religion>",
+      "Only available <in cities with a [Protestantism] religion>",
+      "Only available <in cities with a [Eastern Orthodoxy] religion>"
+    ],
+    "quote": "A special designation granted to the primary church of a nation of major historical or spiritual significance."
+  },
+  {
+    "name": "Grand Mosque",
+    "requiredTech": "Sacred Art",
+    "isNationalWonder": true,
+    "faith": 2,
+    "culture": 2,
+    "greatPersonPoints": {
+      "Great Prophet": 1
+    },
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "[15]% Faith cost of generating Great Prophet equivalents",
+      "Only available <if [Mosque] is constructed in all [non-[Puppeted]] cities>",
+      "Only available <in cities following our religion>"
+    ],
+    "quote": "A special designation granted to the primary church of a nation of major historical or spiritual significance."
+  },
+  // New Global Wonders
   {
     "name": "Leshan Giant Buddha",
     "isWonder": true,
-    "requiredTech": "Religious Objects",
+    "requiredTech": "Religious Works",
     "requiredNearbyImprovedResources": [
       "Stone",
       "Marble"
@@ -101,19 +137,64 @@
     "greatPersonPoints": {
       "Great Engineer": 1
     },
-    "faith": 2,
+    "faith": 5,
     "culture": 3,
     "cost": 175,
     "hurryCostModifier": 25,
     "uniques": [
       "Destroyed when the city is captured",
-      "Religion naturally spreads to cities [5] tiles away"
+      "Gain [25] [Faith] <upon discovering a Natural Wonder>"
     ],
     "civilopediaText": [
       {
-        "text": "Built around 607 AD, it is widely recognized as one of the oldest surviving wooden-constructed buildings in the world, utilizing ancient Japanese cypress."
+        "text": "Built during the Tang Dynasty between 713 and 803 AD, it is the largest and tallest stone Buddha statue in the world"
       }
     ]
+  },
+  {
+    "name": "The Western Wall",
+    "requiredTech": "Religious Works",
+    "isWonder": true,
+    "faith": 2,
+    "culture": 2,
+    "greatPersonPoints": {
+      "Great Prophet": 1
+    },
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "[15]% Natural religion spread [in all cities]"
+    ],
+    "quote": "Most sacred accessible prayer site in Judaism. Built around 19 BCE by King Herod the Great, it is the last surviving retaining wall of the platform that once supported the Second Temple."
+  },
+  {
+    "name": "Church of the Holy Sepulchre",
+    "requiredTech": "Sacred Architecture",
+    "isWonder": true,
+    "faith": 4,
+    "culture": 2,
+    "greatPersonPoints": {
+      "Great Prophet": 1
+    },
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "When spreading religion to a city, gain [3] times the amount of followers of other religions as [Culture]"
+    ],
+    "quote": "A 4th-century basilica marking the traditional site of Jesus's crucifixion, burial, and resurrection."
+  },
+  {
+    "name": "Dome of the Rock",
+    "requiredTech": "Sacred Architecture",
+    "isWonder": true,
+    "faith": 4,
+    "culture": 2,
+    "greatPersonPoints": {
+      "Great Engineer": 1
+    },
+    "uniques": [
+      "Only available <when religion is enabled>",
+      "Religion naturally spreads to cities [5] tiles away"
+    ],
+    "quote": "Completed in 691 CE, boasting a magnificent golden dome and intricate tile work overlooking the historic Temple"
   },
   {
     "name": "Ryōan-ji Zen Garden",
@@ -125,50 +206,8 @@
       "Great Engineer": 1
     },
     "uniques": [
-      "Only available <when religion is enabled>"
-    ],
-    "quote": "Some form of common worship and a common place of worship appear to be a human necessity.\n- Mahatma Gandhi"
-  },
-  {
-    "name": "Church of the Holy Sepulchre",
-    "requiredTech": "Sacred Architecture",
-    "isWonder": true,
-    "faith": 2,
-    "culture": 2,
-    "greatPersonPoints": {
-      "Great Prophet": 1
-    },
-    "uniques": [
-      "Only available <when religion is enabled>"
-    ],
-    "quote": "A 4th-century basilica marking the traditional site of Jesus's crucifixion, burial, and resurrection."
-  },
-  {
-    "name": "Dome of the Rock",
-    "requiredTech": "Sacred Architecture",
-    "isWonder": true,
-    "faith": 2,
-    "culture": 2,
-    "greatPersonPoints": {
-      "Great Engineer": 1
-    },
-    "uniques": [
-      "Only available <when religion is enabled>"
-    ],
-    "quote": "Completed in 691 CE, boasting a magnificent golden dome and intricate tile work overlooking the historic Temple"
-  },
-  {
-    "name": "Old Synagogue",
-    "requiredTech": "Sacred Architecture",
-    "isWonder": true,
-    "faith": 2,
-    "culture": 2,
-    "greatPersonPoints": {
-      "Great Prophet": 1
-    },
-    "uniques": [
-      "Only available <when religion is enabled>"
-    ],
-    "quote": "Dating from around 1250–1320, the building served various purposes in the centuries that followed such as a storehouse, restaurant, and ballroom."
+      "Only available <when religion is enabled>",
+      "Gain [5] [Happiness]"
+    ]
   }
 ]

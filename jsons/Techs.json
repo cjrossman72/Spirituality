@@ -15,7 +15,7 @@
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
         ],
-        "quote": "'Shall the clay say to him that fashioneth it, what makest thou?' - Bible Isaiah 45:9"
+        "quote": "We are not human beings having a spiritual experience. We are spiritual beings having a human experience.\n- Pierre Teilhard de Chardin"
       }
     ]
   },
@@ -65,10 +65,10 @@
           "Calendar",
           "Writing"
         ],
-        "quote": "We are not human beings having a spiritual experience. We are spiritual beings having a human experience.\n- Pierre Teilhard de Chardin"
+        "quote": "The purest thought comes from mediation on word of God. - Lailah Gifty Akita"
       },
       {
-        "name": "Religious Objects",
+        "name": "Sacred Objects",
         "row": 10,
         "prerequisites": [
           "Bronze Working"
@@ -76,7 +76,7 @@
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
         ],
-        "quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
+        "quote": "To encounter the sacred is to be alive at the deepest center of human existence - N. Scott Momaday"
       }
     ]
   },
@@ -109,18 +109,18 @@
         "row": 9,
         "prerequisites": [
           "Construction",
-          "Religious Objects"
+          "Sacred Objects"
         ],
         "uniques": [
           "[+100]% weight to this choice for AI decisions"
         ],
-        "quote": "'Instrumental or mechanical science is the noblest and, above all others, the most useful.' - Leonardo da Vinci"
+        "quote": "The temple of stones is a symbol of the living Church...a 'spiritual edifice,' built by God with 'living stones' - Pope Benedict XVI"
       },
       {
         "name": "Iron Working",
         "row": 10,
         "prerequisites": [
-          "Religious Objects"
+          "Sacred Objects"
         ],
         "uniques": [
           "[-50]% weight to this choice for AI decisions"
@@ -137,13 +137,13 @@
     "wonderCost": 300,
     "techs": [
       {
-        "name": "Evangelism",
+        "name": "Sacred Art",
         "row": 1,
         "prerequisites": [
-          "Optics",
-          "Philosophy"
+          "Philosophy",
+          "Drama and Poetry"
         ],
-        "quote": "'Three things are necessary for the salvation of man: to know what he ought to believe; to know what he ought to desire; and to know what he ought to do' - St. Thomas Aquinas"
+        "quote": "The works of art inspired by Scripture remain a reflection of the unfathomable mystery which engulfs and inhabits the world. - Saint John Paul II"
       },
       {
         "name": "Metal Casting",
